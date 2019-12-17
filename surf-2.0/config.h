@@ -165,4 +165,4 @@ static Button buttons[] = {
 	{ OnMedia,      MODKEY,         1,      clickexternplayer, { 0 },       1 },
 };
 
-#define HOMEPAGE "file:///home/wsz/suckless/tab/index.html"
+#define HOMEPAGE "file:///home/wsz/Suckless/tab/index.html"
