@@ -64,13 +64,17 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *surfcmd[]  = { "surf", NULL };
 static const char *chromecmd[]  = { "chromium", NULL };
 static const char *nemocmd[]  = { "nemo", NULL };
+static const char *autisticicmd[]  = { "autistici", NULL };
+static const char *discordcmd[]  = { "discord", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-    { MODKEY,                       XK_i,      spawn,          {.v = surfcmd } },
-	{ MODKEY,                       XK_u,      spawn,          {.v = chromecmd } },
+//    { MODKEY,                       XK_u,      spawn,          {.v = surfcmd } },
+	{ MODKEY,                       XK_i,      spawn,          {.v = chromecmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_f,      spawn,          {.v = nemocmd } },
+	{ MODKEY,                       XK_m,      spawn,          {.v = autisticicmd } },
+	{ MODKEY,                       XK_d,      spawn,          {.v = discordcmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
