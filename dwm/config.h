@@ -4,7 +4,7 @@
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 0;        /* 0 means no bar */
-static const int topbar             = 0;        /* 0 means bottom bar */
+static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#191D20";
@@ -66,6 +66,8 @@ static const char *chromecmd[]  = { "chromium", NULL };
 static const char *nemocmd[]  = { "nemo", NULL };
 static const char *autisticicmd[]  = { "autistici", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
+static const char *codecmd[]  = { "code", NULL };
+static const char *youtubecmd[]  = { "youtube", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -75,6 +77,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_f,      spawn,          {.v = nemocmd } },
 	{ MODKEY,                       XK_m,      spawn,          {.v = autisticicmd } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = discordcmd } },
+	{ MODKEY,                       XK_e,      spawn,          {.v = codecmd } },
+	{ MODKEY,                       XK_t,      spawn,          {.v = youtubecmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
